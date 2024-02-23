@@ -50,5 +50,15 @@ while(j<z){
   cout << crr[j]<<" ";
   j++;
 } 
+
+// taking input from user 
+int p = 10;
+for (int q=0;q<p;q++){
+  cout<< "enter the input "<<q<< " " ;
+  // q reperesent the index number , p  defined number of element wanted to store 
+  cin>> arr[q];
+  // cin take the input at the indexing  q
+  cout<< endl;
+}
 return 0;
 }
