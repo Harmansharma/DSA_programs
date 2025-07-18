@@ -8,18 +8,18 @@ using namespace std;
      stack<int> s;
      
      while(!q.empty()){
-         int qelement = q.front();
-         q.pop();
-         s.push(qelement);
+         int qelement = q.front();   //(1)
+         q.pop();                    //o(1)    so all operation n time total o(n)
+         s.push(qelement);           //o(1)
      }
      
      while(!s.empty()){
          int selement = s.top();
          s.pop();
-         q.push(selement);
+         q.push(selement);                   // similar fot thiscomplexity 0(n)
      }
      
- }
+ }                                       /// total o(n) + o(n)  == o(n)
  
  // reverse by stack 
  
@@ -37,6 +37,11 @@ using namespace std;
  void kreverse(queue<int> &q, int k){
     stack<int> s;
     int n = q.size();
+
+    if(k>n || k==0){
+    	return;
+    }
+
     for(int i =0; i< k; i++){
         int temp = q.front();
         q.pop();
