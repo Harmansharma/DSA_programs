@@ -10,10 +10,10 @@ maxi = 0
 maxi_key = float('inf')
 
 for i, j in freq.items():
-    if j > maxi:   # new bigger value
+    if j > maxi:
         maxi = j
         maxi_key = i
-    elif j == maxi and i < maxi_key:  # same value, pick smaller key
+    elif j == maxi and i < maxi_key:
         maxi_key = i
         
         
