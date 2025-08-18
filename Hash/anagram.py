@@ -25,7 +25,7 @@ else:
 
 
 
-# Second way solkve this prioblem
+# Second way solve this prioblem above problem we are taking two Dict 
 a = "listen"
 b = "silent"
 
